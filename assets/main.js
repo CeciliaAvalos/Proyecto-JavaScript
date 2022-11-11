@@ -77,10 +77,6 @@ class Carrito {
     }
     agregarAlCarrito (producto) {
     
-      //LOGICA PARA MANEJAR LA CANTIDAD DE UN PRODUCTO EN EL CARRITO
-      //SI EL PRODUCTO A AGREGAR NO EXISTE EN EL CARRITO LO AGREGO CON CANTIDAD = -1
-      //SI EL PRODUCTO A AGREGAR SI EXISTE EN EL CARRITO LE SUMO 1 A LA CANTIDAD
-    
       const productoPorAgregar = producto
   
       // BUSCO EL PRODUCTO EN EL CARRITO 
@@ -126,9 +122,10 @@ class Carrito {
   }
   
   class Producto {
-    constructor(id, nombre, precio, cantidad) {
+    constructor(id, nombre, tipo, precio, cantidad) {
       this.id = id
       this.nombre = nombre
+      this.tipo = tipo
       this.precio = precio
       this.cantidad = 1
     }
@@ -143,12 +140,13 @@ const productos = new Productos()
 let productosCargadosDelJson = [];
 const agregarProductosALaClase = async () => {
 
-  const productosFetch = await fetch('./js/prod.json').then(resp => resp.json()).then(data => data)
+  const productosFetch = await fetch('./assets/prod.json').then(resp => resp.json()).then(data => data)
   productosCargadosDelJson = productosFetch;
   productosCargadosDelJson.forEach((producto) => {
     const nuevoProducto = new Producto(
       producto.id,
       producto.nombre,
+      producto.tipo,
       producto.precio,
       producto.cantidad
     )
@@ -164,7 +162,7 @@ agregarProductosALaClase()
 const cargarFiltros = async () => {
     const contenedorFiltros = document.getElementById('filtroProductos')
   
-    const categoriasFetch = await fetch('./js/categorias.json').then(resp => resp.json()).then(data => data)
+    const categoriasFetch = await fetch('./assets/categorias.json').then(resp => resp.json()).then(data => data)
   
     categoriasFetch.forEach((categoria) => {
       const filtro = document.createElement('div')

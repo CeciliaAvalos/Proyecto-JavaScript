@@ -2,60 +2,70 @@
     {
       "id": 1,
       "nombre": "Torta Personalizada",
+      "tipo": "torta",
       "precio": 5800,
       "imagen": "../imagenesdeProductos/tortaPersonalizada.png"
     },
     {
       "id": 2,
       "nombre": "Tota Clasica",
+      "tipo": "torta",
       "precio": 4500,
       "imagen": "../imagenesdeProductos/tortaClasica.png"
     },
     {
       "id": 3,
       "nombre": "MiniCake",
+      "tipo": "torta",
       "precio": 2500,
       "imagen": "../imagenesdeProductos/MiniCake.png"
     },
     {
       "id": 4,
       "nombre": "Lemon Pie",
+      "tipo": "tarta",
       "precio": 1700,
       "imagen": "../imagenesdeProductos/LemonPie.png"
     },
     {
       "id": 5,
       "nombre": "Pastafrola",
+      "tipo": "tarta",
       "precio": 1200,
       "imagen": "../imagenesdeProductos/Pastafrola.png"
     },
     {
       "id": 6,
       "nombre":"Tarta de Ricotta",
+      "tipo": "tarta",
       "precio": 1350,
       "imagen": "../imagenesdeProductos/Ricota.png"
     },
     {
       "id": 7,
       "nombre": "Tarta de Coco",
+      "tipo": "tarta",
       "precio": 1350,
       "imagen": "../imagenesdeProductos/tartaCoco.png"
     },
     {
       "id": 8,
       "nombre":"tartaFrutal",
+      "tipo": "tarta",
       "precio": 1850,
       "imagen":"../imagenesdeProductos/tartaFrutal.png"
     },
     {
       "id": 9,
       "nombre":"Tarta de Frutilla",
+      "tipo": "tarta",
       "precio": 1850,
       "imagen": "../imagenesdeProductos/tartaFrutilla.png" 
     },
     {
       "id": 10,
       "nombre": "Tarta Toffi",
+      "tipo": "tarta",
       "precio": 1600,
       "imagen": "../imagenesdeProductos/tartaToffi.png"
     }
