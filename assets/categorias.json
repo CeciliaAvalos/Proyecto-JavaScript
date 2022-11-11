@@ -1,0 +1,12 @@
+[
+    {
+      "id": 1,
+      "nombre": "Tortas",
+      "imagen": "../imagenesdeProductos/tortaPersonalizada.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Tartas",
+      "imagen": "../imagenesdeProductos/tartafrutalFrutillaKiwi.png"
+    }
+  ]

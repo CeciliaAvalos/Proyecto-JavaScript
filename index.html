@@ -1,84 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto JS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/main.css">
-</head>
-<body>
-  <body class="bg-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Agrego Google Font a mi Proyecto -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Delicias Sandy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto navegacion">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Nosotros <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Galeria</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-            Productos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Reserva</a>
-          </li>
-          </ul>
-  
-                
-                 <ul class="ms-md-auto">
-                      <li class="submenu">
-                              <img width="30" src="./assets/preentrega3/imagenes/carrito.png" id="img-carrito">
-                              <div id="carrito">
-                                      
-                                  <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th scope="col">Imagen</th>
-                                          <th scope="col">Nombre</th>
-                                          <th scope="col">Precio</th>
-                                          <th scope="col">Cantidad</th>
-                                          <th scope="col">Borrar</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody id="listaCarrito">
-  
-                                      </tbody>
-                                    </table>
-                                    <div class="d-grid gap-2">
-                                      <a href="#" class="btn btn-secondary" id="vaciar-carrito">Vaciar Carrito</a>
-                                    </div>
-                      
-                              </div>
-                      </li>
-                  </ul>
-             
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Play:wght@700&family=Raleway:ital,wght@1,100&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./cs/main.css">
+    <!-- Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>Bienvenidos al carrito de compras de Delicias Sandy!</title>
+  </head>
+  <body>
+    <!-- CONTAINER PRINCIPAL -->
+    <div id="containerTitulo" class="container mb-3"></div>
+    <!-- TABLA DE CARRITO -->
+    <div id="containerCarrito"></div>
     
-        </div>
-      </div>
-      </nav>
-  
-  <!-- Contenido del Carrito -->
-  <div id="shopContent" class="shop_content"></div>
+    <!-- JS Boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Mi JS -->
 
-  <script src="assets/preentrega3/Dom_y_Eventos.js"></script>
+  <script src="assets/main.js"></script>
 
 </body>
 </html>
