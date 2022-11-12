@@ -140,7 +140,7 @@ const productos = new Productos()
 let productosCargadosDelJson = [];
 const agregarProductosALaClase = async () => {
 
-  const productosFetch = await fetch('./assets/prod.json').then(resp => resp.json()).then(data => data)
+  const productosFetch = await fetch('./assets/productos.json').then(resp => resp.json()).then(data => data)
   productosCargadosDelJson = productosFetch;
   productosCargadosDelJson.forEach((producto) => {
     const nuevoProducto = new Producto(
@@ -157,13 +157,16 @@ const agregarProductosALaClase = async () => {
 
 agregarProductosALaClase()
 
+
 //SELECCIONO LAS CATERGORIAS
 
 const cargarFiltros = async () => {
     const contenedorFiltros = document.getElementById('filtroProductos')
   
     const categoriasFetch = await fetch('./assets/categorias.json').then(resp => resp.json()).then(data => data)
-  
+  console.log(categoriasFetch)
+    
+
     categoriasFetch.forEach((categoria) => {
       const filtro = document.createElement('div')
       filtro.classList.add('card')
