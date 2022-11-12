@@ -28,27 +28,6 @@
       "imagen": "../imagenesdeProductos/LemonPie.png"
     },
     {
-      "id": 5,
-      "nombre": "Pastafrola",
-      "tipo": "Tartas",
-      "precio": 1200,
-      "imagen": "../imagenesdeProductos/Pastafrola.png"
-    },
-    {
-      "id": 6,
-      "nombre":"Tarta de Ricotta",
-      "tipo": "Tartas",
-      "precio": 1350,
-      "imagen": "../imagenesdeProductos/Ricota.png"
-    },
-    {
-      "id": 7,
-      "nombre": "Tarta de Coco",
-      "tipo": "Tartas",
-      "precio": 1350,
-      "imagen": "../imagenesdeProductos/tartaCoco.png"
-    },
-    {
       "id": 8,
       "nombre":"tartaFrutal",
       "tipo": "Tartas",
